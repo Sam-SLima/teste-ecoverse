@@ -24,26 +24,30 @@ export const Shelf = ({ hasCategories = false }: ShelfProps) => {
         <div className={styles.line} />
       </div>
       {hasCategories ? (
-        <tr className={styles.tabs}>
-          <td className={styles.tabCategory}>
-            <a className={styles.active}>CELULAR</a>
-          </td>
-          <td className={styles.tabCategory}>
-            <a>ACESSÓRIOS</a>
-          </td>
-          <td className={styles.tabCategory}>
-            <a>TABLETS</a>
-          </td>
-          <td className={styles.tabCategory}>
-            <a>NOTEBOOKS</a>
-          </td>
-          <td className={styles.tabCategory}>
-            <a>TVS</a>
-          </td>
-          <td className={styles.tabCategory}>
-            <a>VER TODOS</a>
-          </td>
-        </tr>
+        <nav className={styles.navTabs} aria-label="Categorias de produtos">
+          <ul className={styles.tabsList}>
+            <li className={styles.tabItem}>
+              <a href="#" className={styles.active}>
+                CELULAR
+              </a>
+            </li>
+            <li className={styles.tabItem}>
+              <a href="#">ACESSÓRIOS</a>
+            </li>
+            <li className={styles.tabItem}>
+              <a href="#">TABLETS</a>
+            </li>
+            <li className={styles.tabItem}>
+              <a href="#">NOTEBOOKS</a>
+            </li>
+            <li className={styles.tabItem}>
+              <a href="#">TVS</a>
+            </li>
+            <li className={styles.tabItem}>
+              <a href="#">VER TODOS</a>
+            </li>
+          </ul>
+        </nav>
       ) : (
         <div className={styles.seeAll}>
           <a href="#" className={styles.seAllTitle}>
@@ -63,7 +67,7 @@ export const Shelf = ({ hasCategories = false }: ShelfProps) => {
                 <ProductCard
                   key={index}
                   product={product}
-                  onClick={(p) => setSelectedProduct(p)}
+                  onClick={(p) => setSelectedProduct}
                 />
               ),
           )}

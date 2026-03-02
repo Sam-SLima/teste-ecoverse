@@ -27,26 +27,48 @@
   }
 }
 
-.tabs {
+.navTabs {
+  width: 100%;
   max-width: 1280px;
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  border-collapse: collapse;
-  .tabCategory {
-    border: 1px solid $cinza_claro;
+  margin: 0 auto 18px;
+}
+
+.tabsList {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border: 1px solid #dedede;
+  border-radius: 4px;
+  overflow: hidden;
+
+  .tabItem {
+    flex: 1;
     text-align: center;
-    padding-block: 5px;
-  }
+    border-right: 1px solid #dedede;
 
-  a {
-    padding: 10px;
-    font-size: 16px;
-    color: $cinza_escuro;
-    cursor: pointer;
+    &:last-child {
+      border-right: none;
+    }
 
-    &.active {
-      color: $azul;
-      font-weight: 700;
+    a {
+      display: block;
+      padding: 8px 0;
+      font-size: 16px;
+      color: $cinza_escuro;
+      text-decoration: none;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: all 0.2s;
+
+      &:hover {
+        background-color: #f9f9f9;
+      }
+
+      &.active {
+        color: $azul;
+        font-weight: 700;
+      }
     }
   }
 }
