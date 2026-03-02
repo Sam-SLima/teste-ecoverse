@@ -1,0 +1,47 @@
+@import "../../styles/variables";
+
+.searchContainer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 657px;
+  height: 48px;
+}
+
+.searchInput {
+  width: 100%;
+  height: 100%;
+  background-color: $background;
+  border: none;
+  border-radius: 10px;
+  padding: 0 50px 0 24px;
+  font-size: 14px;
+  font-weight: 500;
+  color: $cinza_medio;
+  outline: none;
+  transition: all 0.2s ease;
+
+  &::placeholder {
+    color: $cinza_medio;
+  }
+
+  &:focus {
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    border: 1px solid #ddd;
+  }
+}
+
+.searchButton {
+  position: absolute;
+  right: 15px;
+  background: transparent;
+  border: none;
+  color: $cinza_medio;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.2s ease;
+}

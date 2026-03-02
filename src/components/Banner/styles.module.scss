@@ -1,0 +1,43 @@
+@import "../../styles/variables";
+
+.banner {
+  background-image: url("../../assets/images/Rectangle\ 250.svg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 85.04%);
+  display: flex;
+  align-items: center;
+}
+
+.content {
+  max-width: 1280px;
+  margin: 78px 80px 50px;
+
+  h1 {
+    font-size: 48px;
+    color: $background;
+    font-weight: 600;
+  }
+  p {
+    font-size: 32px;
+    font-weight: 400;
+    padding: 5px 0;
+    color: $background;
+    span {
+      color: $amarelo;
+      font-weight: 700;
+    }
+  }
+  .bannerButton {
+    margin-top: 41px;
+    padding: 13px 54px;
+  }
+}

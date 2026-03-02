@@ -1,0 +1,45 @@
+@import "../../styles/variables";
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 24px;
+  border-radius: 5px;
+  font-family: $font-main;
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  border: none;
+  outline: none;
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+}
+
+.primary {
+  background-color: $amarelo;
+  color: $roxo;
+
+  &:hover:not(:disabled) {
+    filter: brightness(0.9);
+  }
+}
+
+.outline {
+  background-color: $azul;
+  color: $background;
+
+  &:hover:not(:disabled) {
+    background-color: $background;
+    color: $cinza_medio;
+  }
+}
+
+.fullWidth {
+  width: 100%;
+}
