@@ -1,4 +1,5 @@
 import type { Product } from "../../types/producs";
+import SimpleButton from "../SimpleButton";
 import styles from "./styles.module.scss";
 
 interface ProductCardProps {
@@ -13,13 +14,21 @@ const ProductCard = ({ product, onClick }: ProductCardProps) => {
   }).format(product.price);
 
   return (
-    <article>
-      <img src={product.photo} alt={product.productName} />
+    <article className={styles.card} onClick={() => onClick(product)}>
+      <img
+        src={product.photo}
+        alt={product.productName}
+        className={styles.image}
+      />
 
-      <div>
-        <h3>{product.productName}</h3>
-        <p>{product.descriptionShort}</p>
-        <p>{formattedPrice}</p>
+      <div className={styles.info}>
+        <h3 className={styles.name}>{product.productName}</h3>
+        <p className={styles.description}>{product.descriptionShort}</p>
+        <p className={styles.price}>{formattedPrice}</p>
+
+        <SimpleButton className={styles.productButton} variant="secondary">
+          COMPRAR
+        </SimpleButton>
       </div>
     </article>
   );

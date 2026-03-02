@@ -1,0 +1,102 @@
+@import "../../styles/variables";
+
+.footer {
+  background-color: #e8e8e8; // Cinza bem claro conforme a imagem
+  padding-top: 70px;
+  color: #3f3f40;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  padding: 0 20px 60px;
+  align-items: flex-start;
+}
+
+.branding {
+  flex: 2;
+  max-width: 350px;
+  margin-right: 90px;
+
+  .logo {
+    height: 45px;
+    margin-bottom: 25px;
+  }
+
+  .description {
+    font-size: 14px;
+    max-width: 320px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+  }
+
+  .social {
+    display: flex;
+    gap: 25px;
+    font-size: 22px;
+    color: #3f3f40;
+
+    svg {
+      cursor: pointer;
+      &:hover {
+        color: $cinza_escuro;
+      }
+    }
+  }
+}
+
+.divider {
+  width: 1px;
+  height: 200px;
+  background-color: #dedede;
+  margin-right: 60px;
+}
+
+.navLinks {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+
+.column {
+  h3 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    color: #3f3f40;
+  }
+
+  ul {
+    list-style: none;
+
+    li {
+      font-size: 14px;
+      font-weight: 400;
+      margin-bottom: 15px;
+      color: #3f3f40;
+      cursor: pointer;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.bottom {
+  border-top: 1px solid #dedede;
+  padding: 25px 0;
+  text-align: center;
+  background-color: $branco;
+
+  p {
+    font-size: 12px;
+    color: #3f3f40;
+  }
+}

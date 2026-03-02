@@ -1,0 +1,63 @@
+@import "../../styles/variables";
+
+.newsletter {
+  width: 100%;
+  padding: 40px 0;
+  background-color: $roxo;
+  border-top: 1px solid $cinza_medio;
+}
+
+.container {
+  max-width: 1441px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 124px;
+  @media (max-width: 900px) {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.content {
+  .title {
+    font-size: 32px;
+    color: $branco;
+  }
+  .description {
+    font-size: 14px;
+    color: $branco;
+  }
+}
+
+.form {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  flex: 1;
+  .inputGroup {
+    display: flex;
+    gap: 10px;
+    .input {
+      flex: 1;
+      padding: 12px;
+      border: none;
+      border-radius: 8px;
+    }
+
+    .button {
+      padding: 15px 40px;
+    }
+  }
+
+  .label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 12px;
+    cursor: pointer;
+    color: $branco;
+  }
+}

@@ -16,13 +16,13 @@ const Header = () => {
         <li>
           <p className={styles.topDesc}>
             <img src={ShieldCheck} alt="escudo confere" />
-            Compra <span>100% segura</span>
+            Compra<span> 100% segura</span>
           </p>
         </li>
         <li>
           <p className={styles.topDesc}>
             <img src={Truck} alt="caminhão" />
-            <span>Frete grátis</span> acima de 20R$
+            <span>Frete grátis </span>acima de 20R$
           </p>
         </li>
         <li>
@@ -32,7 +32,7 @@ const Header = () => {
               src={CreditCard}
               alt="cartão de crédito"
             />
-            <span>Parcele</span> suas compras
+            <span>Parcele </span>suas compras
           </p>
         </li>
       </ul>
