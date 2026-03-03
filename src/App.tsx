@@ -2,9 +2,9 @@ import "./styles/global.scss";
 import Header from "./components/header";
 import Banner from "./components/Banner";
 import CategoryMenu from "./components/CategoryMenu";
-import { Shelf } from "./components/Shelf";
-import { Partners } from "./components/Parceiros";
-import Marcas from "./components/Marcas";
+import Shelf from "./components/Shelf";
+import Partners from "./components/Partners";
+import Marcas from "./components/Brands";
 import Newsletter from "./components/Newsletter";
 import Footer from "./components/Footer";
 

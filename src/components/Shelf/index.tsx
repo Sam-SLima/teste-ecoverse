@@ -10,7 +10,7 @@ interface ShelfProps {
   hasCategories?: boolean;
 }
 
-export const Shelf = ({ hasCategories = false }: ShelfProps) => {
+const Shelf = ({ hasCategories = false }: ShelfProps) => {
   const { products, loading } = useProducts();
   const [selectedProduct, setSelectedProduct] = useState<any>(null);
   if (loading)
@@ -67,7 +67,7 @@ export const Shelf = ({ hasCategories = false }: ShelfProps) => {
                 <ProductCard
                   key={index}
                   product={product}
-                  onClick={(p) => setSelectedProduct}
+                  onClick={(p) => setSelectedProduct(p)}
                 />
               ),
           )}
@@ -87,3 +87,5 @@ export const Shelf = ({ hasCategories = false }: ShelfProps) => {
     </section>
   );
 };
+
+export default Shelf;

@@ -37,7 +37,7 @@ const Header = () => {
         </li>
       </ul>
       <div className={styles.mainHeader}>
-        <img src={logo} alt="" />
+        <img src={logo} alt="Logo da Econverse" />
         <InputSearch />
         <ul className={styles.services}>
           <li className={styles.service}>

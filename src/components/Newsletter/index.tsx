@@ -1,4 +1,4 @@
-import React, { useState, type FormEvent } from "react";
+import { useState, type FormEvent } from "react";
 import styles from "./styles.module.scss";
 import SimpleButton from "../SimpleButton";
 
@@ -50,7 +50,7 @@ const Newsletter = () => {
           </div>
 
           <label className={styles.label}>
-            <input type="checkbox" /> Aceito os termos e condições
+            <input type="checkbox" required /> Aceito os termos e condições
           </label>
         </form>
       </div>

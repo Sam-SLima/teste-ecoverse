@@ -8,7 +8,6 @@ const Footer = () => {
   return (
     <footer className={styles.footer}>
       <div className={styles.container}>
-        {/* Coluna da Esquerda: Branding */}
         <div className={styles.branding}>
           <img src={Logo} alt="Econverse" className={styles.logo} />
           <p className={styles.description}>
@@ -20,11 +19,7 @@ const Footer = () => {
             <img src={LinkedIn} alt="Linkedin" />
           </div>
         </div>
-
-        {/* Linha Divisória Vertical */}
         <div className={styles.divider} />
-
-        {/* Colunas de Links */}
         <nav className={styles.navLinks}>
           <div className={styles.column}>
             <h3>Institucional</h3>

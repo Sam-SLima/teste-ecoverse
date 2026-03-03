@@ -1,4 +1,3 @@
-import { HiOutlineSearch } from "react-icons/hi";
 import SearchIcon from "../../assets/icons/MagnifyingGlass.svg";
 import styles from "./styles.module.scss";
 

@@ -2,7 +2,7 @@ import Parceiros from "../../assets/images/parceiros.svg";
 import SimpleButton from "../SimpleButton";
 import styles from "./styles.module.scss";
 
-export const Partners = () => {
+const Partners = () => {
   const partnerData = [
     {
       title: "Parceiros",
@@ -45,3 +45,5 @@ export const Partners = () => {
     </section>
   );
 };
+
+export default Partners;
