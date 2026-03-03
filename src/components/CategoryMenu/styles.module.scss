@@ -7,6 +7,7 @@
 
 .container {
   max-width: 1280px;
+  width: 100%;
   margin: 0 auto;
   display: flex;
   justify-content: center;
@@ -25,7 +26,7 @@
   .iconWrapper {
     width: 128px;
     height: 128px;
-    background-color: #f4f4f4;
+    background-color: $cinza_claro;
     border-radius: 10px;
     display: flex;
     align-items: center;
@@ -42,7 +43,7 @@
   span {
     font-size: 14px;
     font-weight: 500;
-    color: #4e4e4e;
+    color: $cinza_escuro;
   }
   &:hover,
   &.active {
@@ -52,7 +53,7 @@
     }
 
     .iconWrapper {
-      background-color: #ffffff;
+      background-color: $branco;
     }
   }
 }

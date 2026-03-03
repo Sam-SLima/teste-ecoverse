@@ -1,9 +1,9 @@
 @import "../../styles/variables";
 
 .footer {
-  background-color: #e8e8e8; // Cinza bem claro conforme a imagem
+  background-color: $cinza_claro;
   padding-top: 70px;
-  color: #3f3f40;
+  color: $cinza_escuro;
 }
 
 .container {
@@ -35,21 +35,15 @@
     display: flex;
     gap: 25px;
     font-size: 22px;
-    color: #3f3f40;
-
-    svg {
-      cursor: pointer;
-      &:hover {
-        color: $cinza_escuro;
-      }
-    }
+    color: $cinza_escuro;
+    cursor: pointer;
   }
 }
 
 .divider {
   width: 1px;
   height: 200px;
-  background-color: #dedede;
+  background-color: #2828282e;
   margin-right: 60px;
 }
 
@@ -69,7 +63,7 @@
     font-size: 18px;
     font-weight: 700;
     margin-bottom: 25px;
-    color: #3f3f40;
+    color: $cinza_escuro;
   }
 
   ul {
@@ -79,7 +73,7 @@
       font-size: 14px;
       font-weight: 400;
       margin-bottom: 15px;
-      color: #3f3f40;
+      color: $cinza_escuro;
       cursor: pointer;
 
       &:hover {
@@ -90,13 +84,12 @@
 }
 
 .bottom {
-  border-top: 1px solid #dedede;
   padding: 25px 0;
   text-align: center;
   background-color: $branco;
 
   p {
     font-size: 12px;
-    color: #3f3f40;
+    color: $cinza_escuro;
   }
 }

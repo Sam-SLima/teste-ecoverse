@@ -18,13 +18,16 @@
 }
 
 .content {
+  width: 100%;
   max-width: 1280px;
-  margin: 78px 80px 50px;
+  margin: 0 auto;
+  padding: 78px 20px 50px 20px;
 
   h1 {
     font-size: 48px;
     color: $background;
     font-weight: 600;
+    max-width: 800px;
   }
   p {
     font-size: 32px;
